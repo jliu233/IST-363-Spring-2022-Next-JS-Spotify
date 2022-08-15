@@ -3,9 +3,11 @@ import Heading from "../../components/Heading";
 import Image from "next/image";
 import Layout from "../../components/Layout";
 import Link from "next/link";
+import Paragraph from "../../components/Paragraph";
 import Row from "../../components/Row";
 
 import { getAllArtistsSlugs, getSingleArtistData } from "../../lib/api"
+
 
 
 // WATERFALL
@@ -66,6 +68,13 @@ const SingleArtistPage = (({ artistData }) => {
             </Row>
         </section>
         }
+        <Paragraph>
+            <Link href="/artists">
+                <a>
+                    Back to artists
+                </a>
+            </Link>
+        </Paragraph>
     </Layout>
     }
 )
